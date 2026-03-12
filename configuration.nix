@@ -79,8 +79,9 @@
     wget
     firefox discord
     git gh glab
-    nodejs_22
-    bun
+    nodejs_22 bun
+    # --- Linux --- 
+    htop
     # ─── Hyprland Ecosystem ─────────────────────
     hyprpaper
     hypridle
