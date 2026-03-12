@@ -35,7 +35,11 @@
   ];
 
   # Load necessary modules for Audio and Touchpad
-  boot.initrd.kernelModules = [ "i2c_hid_acpi" "snd_hda_intel" "snd_sof_pci_intel_tgl" ];
+  boot.initrd.kernelModules = [
+ "i2c_hid_acpi"
+# "snd_hda_intel"
+ "snd_sof_pci_intel_tgl"
+ ];
 
   networking.hostName = "nixos"; # Define your hostname.
 
@@ -100,8 +104,8 @@
     slurp
     swappy
     # ─── Audio ───────────────────────────────────
-    pipewire
-    wireplumber
+#    pipewire
+#    wireplumber
     pavucontrol
     # ─── Brightness ──────────────────────────────
     brightnessctl
@@ -181,6 +185,7 @@
     alsa.support32Bit = true;
     pulse.enable = true;
     jack.enable = true;
+    wireplumber.enable = true;
   };
 
   hardware.bluetooth = {
