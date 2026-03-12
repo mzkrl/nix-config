@@ -81,7 +81,7 @@
     git gh glab
     nodejs_22 bun
     # --- Linux --- 
-    htop
+    htop gparted baobab
     # ─── Hyprland Ecosystem ─────────────────────
     hyprpaper
     hypridle
